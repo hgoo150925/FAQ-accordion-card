@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 
 export const SingletonQuestion = ({ title, info }) => {
   const [showInfo, setShowInfo] = useState(false);
@@ -13,4 +14,9 @@ export const SingletonQuestion = ({ title, info }) => {
       {showInfo && <p>{info}</p>}
     </div>
   );
+};
+
+SingletonQuestion.propTypes = {
+  title: PropTypes.string.isRequired,
+  info: PropTypes.string.isRequired,
 };

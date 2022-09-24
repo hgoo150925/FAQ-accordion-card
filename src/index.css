@@ -43,3 +43,12 @@ body {
     )
     no-repeat center center fixed;
 }
+
+.container {
+  width: 92.8rem;
+  height: 51rem;
+  border: 1px solid white;
+  margin: 13rem auto;
+  background-color: #fff;
+  border-radius: 2rem;
+}
